@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anime Tier List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <h1>Anime tier list</h1>
+
+    <!--Hamburger menu-->
+    <button id="menuButton">Anime List</button>
+    <div id="menu" style="display: none">
+      <ul id="animeList"></ul>
+    </div>
+
+    <!--Clear all and Filter-->
+    <div id="filterOptions">
+      <button id="clearAll">Clear all</button>
+      <label>
+        <input type="checkbox" id="filterMainCharacters" />
+        Show only main characters
+      </label>
+    </div>
+    <!--Tier list-->
+    <div class="mainContent">
+      <div id="tierList">
+        <div class="tier S-Tier" data-tier="S-Tier">
+          <h3>S-Tier</h3>
+        </div>
+        <div class="tier A-Tier" data-tier="A-Tier">
+          <h3>A-Tier</h3>
+        </div>
+        <div class="tier B-Tier" data-tier="B-Tier">
+          <h3>B-Tier</h3>
+        </div>
+        <div class="tier C-Tier" data-tier="C-Tier">
+          <h3>C-Tier</h3>
+        </div>
+        <div class="tier D-Tier" data-tier="D-Tier">
+          <h3>D-Tier</h3>
+        </div>
+      </div>
+
+      <div id="characters" class="characterPool"></div>
+    </div>
+  </body>
+</html>

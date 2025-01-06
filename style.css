@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+@font-face {
+  font-family: "Kaiju";
+  src: url("Fonts/Kaiju.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Fonts above*/
+
+/*general style*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  background-image: url("Pictures/Background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: "Kaiju", sans-serif;
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 5px 5px 0px #33333388;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: repeat(2, 40vw);
+  margin: 50px;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+/* Burger menu styling*/
+#menuButton {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#menuButton:hover {
+  background-color: #555;
+}
+
+#menu {
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px #33333388;
+  position: absolute;
+  z-index: 10;
+}
+
+/*list inside the hamburger menu*/
+
+#animeList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#animeList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #eaeaea;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#animeList li:hover {
+  background-color: #fff;
+}
+
+#animeList img {
+  margin-right: 10px;
+  width: 50px;
+  height: auto;
+}
+
+/*Filter and clear button style*/
+#clearAll {
+  padding: 7px 14px;
+  background-color: #f44e42;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#filterMainCharacters {
+  color: #fff;
+}
+
+/*The Tier List itself */
+
+#tierList {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 15px;
+  width: 100%;
+}
+
+.tier {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  min-height: 300px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  overflow-y: auto;
+  box-shadow: 5px 5px 0px #33333388;
+}
+
+.tier h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: left;
+}
+
+.tier.S-Tier {
+  background-color: #f5b842;
+  color: #fff;
+}
+
+.tier.A-Tier {
+  background-color: #4dbf7b;
+  color: #fff;
+}
+
+.tier.B-Tier {
+  background-color: #0073e6;
+  color: #fff;
+}
+
+.tier.C-Tier {
+  background-color: #ff9f42;
+  color: #fff;
+}
+
+.tier.D-Tier {
+  background-color: #f44e42;
+  color: #fff;
+}
+
+/*The character divs*/
+
+.characterPool {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+.character {
+  max-width: 100px;
+  max-height: 225px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.character:hover {
+  transform: scale(1.05);
+}
+
+.character img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.character p {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#filterOptions {
+  margin-top: 20px;
+}
